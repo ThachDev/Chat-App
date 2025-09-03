@@ -1,16 +1,74 @@
-# chatapp
+# 💬 ChatApp – Ứng dụng Chat Thời Gian Thực
 
-A new Flutter project.
+ChatApp là một **ứng dụng chat thời gian thực** được xây dựng bằng **Flutter** và **Firebase**.  
+Người dùng có thể **đăng ký, đăng nhập, nhắn tin, gửi hình ảnh, trạng thái online/offline** và nhận **thông báo đẩy** ngay lập tức.  
+Ứng dụng phù hợp cho cá nhân hoặc nhóm muốn xây dựng một **chat app hiện đại, nhanh và bảo mật**.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🚀 Tính năng nổi bật
 
-A few resources to get you started if this is your first Flutter project:
+- 🔐 **Xác thực người dùng** bằng **Firebase Auth** (Email & Google Sign-In)
+- 💬 **Nhắn tin thời gian thực** với **Cloud Firestore**
+- 📸 **Gửi ảnh** trực tiếp trong cuộc trò chuyện
+- 🟢 **Hiển thị trạng thái online/offline** của người dùng
+- 🛎 **Thông báo đẩy (Push Notification)** khi có tin nhắn mới
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🛠 Công nghệ sử dụng
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **Flutter** + **Dart**
+- **Firebase Authentication** → Đăng ký, đăng nhập và bảo mật tài khoản
+- **Cloud Firestore** → Lưu trữ tin nhắn và thông tin người dùng theo thời gian thực
+- **Firebase Storage** → Lưu trữ hình ảnh
+- **Firebase Cloud Messaging (FCM)** → Push Notifications
+- **Provider / GetX / Riverpod** → Quản lý trạng thái *(tùy chọn)*
+- **MVC Architecture** → Tách biệt **Model – View – Controller** để dễ bảo trì
+
+---
+
+## 📂 Cấu trúc thư mục
+
+```bash
+lib/
+├── models/          # Khai báo các model dữ liệu (User, Message, ChatRoom)
+├── views/           # UI (màn hình đăng nhập, chat, profile, settings, etc.)
+├── controllers/     # Xử lý logic, kết nối Firebase, quản lý trạng thái
+├── services/        # Firebase, Push Notifications, Upload ảnh
+├── utils/           # Hàm tiện ích, constants, theme, validator
+└── widgets/         # Các widget tái sử dụng (ChatBubble, Avatar, InputField, etc.)
+```
+---
+⚙️ Hướng dẫn cài đặt
+1. Clone dự án
+```bash
+git clone https://github.com/your-username/chatify.git
+```
+
+2. Di chuyển vào thư mục dự án
+```bash
+cd chatify
+```
+
+3. Cài đặt dependencies
+```bash
+flutter pub get
+```
+4. Chạy dự án 
+```bash
+flutter run
+```
+---
+📌 Lộ trình phát triển
+
+ Đăng nhập, đăng ký
+
+ Nhắn tin realtime
+
+ Gửi ảnh & avatar
+
+ Push Notifications
+
+ Gọi thoại & video call (sắp ra mắt)
+
+ Mã hóa đầu cuối (E2EE)
