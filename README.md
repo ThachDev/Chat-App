@@ -31,12 +31,8 @@ Người dùng có thể **đăng ký, đăng nhập, nhắn tin, gửi hình �
 
 ```bash
 lib/
-├── models/          # Khai báo các model dữ liệu (User, Message, ChatRoom)
-├── views/           # UI (màn hình đăng nhập, chat, profile, settings, etc.)
-├── controllers/     # Xử lý logic, kết nối Firebase, quản lý trạng thái
-├── services/        # Firebase, Push Notifications, Upload ảnh
-├── utils/           # Hàm tiện ích, constants, theme, validator
-└── widgets/         # Các widget tái sử dụng (ChatBubble, Avatar, InputField, etc.)
+├── common/          # Chứa thư mục (entities, store, route, service, util, etc) 
+└── page/           # UI (màn hình đăng nhập, chat, profile, settings, etc.) 
 ```
 ---
 ⚙️ Hướng dẫn cài đặt
